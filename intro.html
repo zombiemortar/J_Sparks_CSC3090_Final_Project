@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Video</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: black;
+        }
+
+        #video-container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #skip-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="video-container">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="skip-button">Skip Intro</button>
+    </div>
+
+    <script>
+        // Redirect when video ends
+        document.getElementById("intro-video").addEventListener("ended", function() {
+            window.location.href = "index.html";
+        });
+
+        // Skip button functionality
+        document.getElementById("skip-button").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+</html>

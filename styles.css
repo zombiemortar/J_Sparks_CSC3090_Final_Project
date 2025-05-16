@@ -1,0 +1,57 @@
+:root {
+  --bs-primary: #4A5568; /* Muted Blue-Gray */
+  --bs-secondary: #A0AEC0; /* Cool Silver */
+  --bs-background: #F2EFDE; /* Soft Beige */
+  --bs-text: #2D3748; /* Deep Charcoal */
+}
+
+body {
+  background-color: var(--bs-background);
+  color: var(--bs-text);
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+  background-color: var(--bs-primary);
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-secondary);
+}
+
+.name-signature {
+  font-family: 'Sacramento', cursive;
+  font-size: 48px; /* Adjust size if needed */
+  font-weight: 400;
+}
+
+.navbar-brand {
+  font-family: 'Sacramento', cursive;
+  font-size: 36px; /* Adjust size as needed */
+  font-weight: 400;
+}
+
+.navbar-toggler {
+  filter: invert(1);
+}
+
+.card-img-top {
+  height: 200px;  /* Adjust as needed */
+  object-fit: cover; /* Ensures uniform cropping */
+  width: 100%; /* Keeps aspect ratio balanced */
+}
+
+#audio-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures it stays above other content */
+}
