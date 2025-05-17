@@ -58,5 +58,5 @@ body {
 
 .nav-link.active {
   font-weight: bold;
-  color: #ffcc00 !important; /* Highlight color */
+  color: #ffcc00 !important;
 }
