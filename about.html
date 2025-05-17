@@ -1,0 +1,28 @@
+<div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get current page filename
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // Mapping pages to navbar IDs
+    let navLinks = {
+      "index.html": "nav-home",
+      "about.html": "nav-about",
+      "projects.html": "nav-projects",
+      "contact.html": "nav-contact"
+    };
+
+    // Add "active" class to the correct navbar link
+    if (navLinks[currentPage]) {
+      document.getElementById(navLinks[currentPage]).classList.add("active");
+    }
+  });
+</script>

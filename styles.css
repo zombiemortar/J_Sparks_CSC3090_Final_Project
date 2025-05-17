@@ -55,3 +55,8 @@ body {
   right: 20px;
   z-index: 1000; /* Ensures it stays above other content */
 }
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ffcc00 !important; /* Highlight color */
+}
