@@ -114,3 +114,37 @@ form {
     font-weight: bold; /* Makes it pop */
     color: #000 !important; /* Darker text */
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px; /* Increase arrow size */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+    border-radius: 50%; /* Rounded edges */
+    filter: invert(100%) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* White arrows + subtle shadow */
+}
+
+#projectCarousel {
+    height: 400px; /* Adjust this to your preference */
+    margin-bottom: 150px;
+}
+
+/* Ensure carousel items take up the full space */
+.carousel-item .card {
+    height: auto; /* Allows cards to fill the taller carousel */
+}
+
+/* Optionally, make images scale properly */
+.card-img-top {
+    height: auto;
+    max-height: 400px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--bs-primary);
+  color: white;
+  text-align: center;
+}
