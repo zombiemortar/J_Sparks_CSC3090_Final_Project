@@ -60,3 +60,57 @@ body {
   font-weight: bold;
   color: #ffcc00 !important;
 }
+
+.transform-image {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%; /* Ensures it doesn’t shrink the card */
+}
+
+.transform-image:hover {
+  transform: scale(1.1); /* Enlarges image */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+.card-link {
+  text-decoration: none; /* Removes default underline */
+}
+
+.transform-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.transform-card:hover {
+  transform: scale(1.10); /* Slight enlargement */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+.nav-link {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 204, 0, 0.3); /* Subtle glow */
+  border-radius: 5px;
+}
+/* Darker font for form inputs */
+form input,
+form textarea {
+    color: black !important; /* Darker text */
+    font-weight: bold; /* Makes it pop */
+    border: 2px solid #444; /* Darker border */
+    padding: 10px;
+}
+
+/* Darker border & styling for the form */
+form {
+    border: 3px solid #222; /* Solid dark outline */
+    background: #fff; /* Keep contrast clean */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Slight depth effect */
+    padding: 20px;
+    border-radius: 8px; /* Smooth edges */
+}
+
+.form-label {
+    font-weight: bold; /* Makes it pop */
+    color: #000 !important; /* Darker text */
+}
