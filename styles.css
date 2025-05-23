@@ -43,7 +43,7 @@ body {
   filter: invert(1);
 }
 
-.card-img-top {
+.card-img-top2 {
   height: 200px;  /* Adjust as needed */
   object-fit: cover; /* Ensures uniform cropping */
   width: 100%; /* Keeps aspect ratio balanced */
