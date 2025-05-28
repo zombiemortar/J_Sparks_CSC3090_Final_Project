@@ -557,3 +557,20 @@ footer {
 [data-aos].aos-animate {
     opacity: 1;
 }
+
+.github-feed .loading {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+}
+
+.github-feed .loading::after {
+    content: '...';
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { content: '.'; }
+    33% { content: '..'; }
+    66% { content: '...'; }
+}
