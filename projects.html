@@ -36,68 +36,87 @@
     </div>
 </nav>
 
-<!-- Header Section -->
-<header class="text-center py-5">
-    <h1>My Projects</h1>
-    <p>Here are some various projects that I have completed.</p>
-</header>
+<main>
+    <!-- Header Section -->
+    <header class="text-center py-5">
+        <h1>My Projects</h1>
+        <p>A showcase of my web development work</p>
+    </header>
 
-<!-- Project Carousel Section -->
-<section class="container my-5">
-    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <!-- Project Carousel Section -->
+    <section class="container my-5">
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
-            <!-- AegisVault -->
-            <div class="carousel-item active">
-                <div class="card">
-                    <img src="images/aegisvault.jpg" class="card-img-top" alt="AegisVault">
-                    <div class="card-body">
-                        <h5 class="card-title">AegisVault</h5>
-                        <p class="card-text">A locally hosted password manager built with Python and Flask.</p>
-                        <a href="https://github.com/zombiemortar/AegisVault" class="btn btn-primary">View on GitHub</a>
+                <!-- AegisVault -->
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="images/aegisvault.jpg" class="card-img-top" alt="AegisVault">
+                        <div class="card-body">
+                            <h5 class="card-title">AegisVault</h5>
+                            <p class="card-text">A locally hosted password manager built with Python and Flask.</p>
+                            <a href="https://github.com/zombiemortar/AegisVault" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Pong Recreation -->
-            <div class="carousel-item">
-                <div class="card">
-                    <img src="images/classic_pong.jpg" class="card-img-top" alt="Pong">
-                    <div class="card-body">
-                        <h5 class="card-title">Pong</h5>
-                        <p class="card-text">A Python-powered recreation of the classic Pong arcade game.</p>
-                        <a href="https://github.com/zombiemortar/python_pong" class="btn btn-primary">View on GitHub</a>
+                <!-- Pong Recreation -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="images/classic_pong.jpg" class="card-img-top" alt="Pong">
+                        <div class="card-body">
+                            <h5 class="card-title">Pong</h5>
+                            <p class="card-text">A Python-powered recreation of the classic Pong arcade game.</p>
+                            <a href="https://github.com/zombiemortar/python_pong" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Frogger Recreation -->
-            <div class="carousel-item">
-                <div class="card">
-                    <img src="images/frogger.jpg" class="card-img-top" alt="Frogger">
-                    <div class="card-body">
-                        <h5 class="card-title">Frogger</h5>
-                        <p class="card-text">A Python recreation of the nostalgic Frogger game.</p>
-                        <a href="https://github.com/zombiemortar/python_frogger" class="btn btn-primary">View on GitHub</a>
+                <!-- Frogger Recreation -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="images/frogger.jpg" class="card-img-top" alt="Frogger">
+                        <div class="card-body">
+                            <h5 class="card-title">Frogger</h5>
+                            <p class="card-text">A Python recreation of the nostalgic Frogger game.</p>
+                            <a href="https://github.com/zombiemortar/python_frogger" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-</section>
+    </section>
+</main>
 
 <!-- Footer -->
 <footer class="text-center py-3">
-    <p>&copy; 2025 Joseph Sparks | <a href="https://github.com/zombiemortar/">GitHub</a> | <a href="https://www.linkedin.com/in/josephmsparks/">LinkedIn</a></p>
+    <ul class="social-icons">
+        <li>
+            <a href="https://github.com/zombiemortar/" class="social-link github" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/josephmsparks/" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/zombiejesus1984" class="social-link twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+    </ul>
+    <p>&copy; 2025 Joseph Sparks</p>
 </footer>
 
 <!-- JavaScript for Navbar Active State -->
@@ -149,5 +168,6 @@
   });
 </script>
 
+<script src="js/social-integration.js"></script>
 </body>
 </html>
