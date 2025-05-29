@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Me - Joseph Sparks</title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -14,10 +14,26 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        .bio-image {
+            float: left;
+            margin: 0 20px 20px 0;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .bio-content {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="#">Joseph Sparks</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,62 +41,49 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item"><a id="nav-home" class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a id="nav-about" class="nav-link" href="about.html">About</a></li>
-                  <li class="nav-item"><a id="nav-projects" class="nav-link" href="projects.html">Projects</a></li>
-                  <li class="nav-item"><a id="nav-contact" class="nav-link" href="contact.html">Contact</a></li>
-                  <li class="nav-item">
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                      <i class="fas fa-sun"></i>
-                    </button>
-                  </li>
+                    <li class="nav-item"><a id="nav-home" class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a id="nav-about" class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a id="nav-projects" class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a id="nav-contact" class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <script>
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header-placeholder").innerHTML = data;
-            });
-    </script>
+    <!-- Main Content -->
+    <main class="container py-5">
+        <section class="about-section" data-aos="fade-up">
+            <h1 class="text-center mb-5">About Me</h1>
+            <div class="bio-content">
+                <img src="images/profile-pic.jpg" alt="Joseph Sparks" class="bio-image">
+                <p>With 20 years of service as an Infantryman in the U.S. Army, I've built a career rooted in discipline, problem-solving, and adaptability. Now, I bring that same precision and dedication to software development, focusing on secure and user-friendly applications. My expertise spans Python, Flask, encryption techniques, and database management—skills I refine to create seamless, intuitive solutions.</p>
+                
+                <p>Beyond coding, I'm a husband and father, balancing innovation with family life while constantly exploring new ways to enhance functionality and design. Whether it's optimizing workflows, refining technical documentation, or tackling complex security challenges, I thrive on methodical problem-solving with a commitment to excellence.</p>
 
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get current page filename
-    let currentPage = window.location.pathname.split("/").pop();
+                <p>My transition from military service to software development has been driven by a passion for technology and a desire to continue serving others in a different capacity. During my military career, I led teams through complex operations, managed critical resources, and developed strategic solutions under pressure. These experiences have uniquely positioned me to understand the importance of reliable, secure systems and clear communication in any project.</p>
 
-    // Mapping pages to navbar IDs
-    let navLinks = {
-      "index.html": "nav-home",
-      "about.html": "nav-about",
-      "projects.html": "nav-projects",
-      "contact.html": "nav-contact"
-    };
 
-    // Add "active" class to the correct navbar link
-    if (navLinks[currentPage]) {
-      document.getElementById(navLinks[currentPage]).classList.add("active");
-    }
-  });
-</script>
-<main>
-    <!-- Header Section -->
-    <header class="text-center py-5" data-aos="fade-down">
-        <h1>About Me</h1>
-        <p>Learn more about my background and skills</p>
-    </header>
+                <p>Currently, I'm expanding my expertise in full-stack development, with a particular focus on:</p>
+                <ul>
+                    <li>Web Application Security and Penetration Testing</li>
+                    <li>Python-based Application Development</li>
+                    <li>Database Design and Management</li>
+                    <li>API Development and Integration</li>
+                    <li>Cloud Infrastructure and Deployment</li>
+                </ul>
 
-    <!-- About Content -->
-    <div class="container" data-aos="fade-up">
-        // ... about content ...
-    </div>
-</main>
+                <p>My approach to software development combines military precision with innovative thinking, ensuring that every project I undertake is not just functional, but secure, scalable, and user-focused. I'm always excited to take on new challenges and collaborate with others who share my passion for creating impactful solutions.</p>
+            </div>
+        </section>
+    </main>
 
-<!-- Footer -->
-<footer class="text-center py-3">
+    <!-- Footer -->
+    <footer class="text-center py-3">
         <ul class="social-icons">
             <li>
                 <a href="https://github.com/zombiemortar/" class="social-link github" target="_blank" rel="noopener noreferrer">
@@ -103,44 +106,39 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/interactive.js"></script>
     <script>
-        AOS.init({
-            duration: 1200,
-            once: true,
-            delay: 100,
-            easing: 'ease-out-cubic'
+        AOS.init();
+        
+        // Theme toggle functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const icon = themeToggle.querySelector('i');
+            
+            const savedTheme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateIcon(savedTheme);
+            
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon(newTheme);
+            });
+            
+            function updateIcon(theme) {
+                icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+            }
+        });
+
+        // Active nav link
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("nav-about").classList.add("active");
         });
     </script>
-    <script>
-      // Theme toggle functionality
-      document.addEventListener('DOMContentLoaded', () => {
-        const themeToggle = document.getElementById('theme-toggle');
-        const icon = themeToggle.querySelector('i');
-        
-        // Check for saved theme preference, otherwise use system preference
-        const savedTheme = localStorage.getItem('theme') || 
-          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        
-        // Apply saved theme
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateIcon(savedTheme);
-        
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', () => {
-          const currentTheme = document.documentElement.getAttribute('data-theme');
-          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-          
-          document.documentElement.setAttribute('data-theme', newTheme);
-          localStorage.setItem('theme', newTheme);
-          updateIcon(newTheme);
-        });
-        
-        // Update icon based on current theme
-        function updateIcon(theme) {
-          icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
-        }
-      });
-    </script>
-    <script src="js/social-integration.js"></script>
 </body>
 </html>
